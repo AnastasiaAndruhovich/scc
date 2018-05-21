@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <scc j:dependencies="advanced-visibility article assets bookmarks bootstrap3-components bootstrap3-core calendar channels ckeditor contact contentRetrieval contribute default default-skins digitall document-management-api document-thumbnails document-viewer-service dx-base-demo-components dx-base-demo-core dx-base-demo-templates event external-provider external-provider-modules external-provider-users-groups external-provider-vfs facets faq font-awesome form-factory-core form-factory-snippets-extension googleAnalytics graphql-dxm-provider grid jaxrs-osgi-extender jcr-webdav jcrestapi jquery ldap linkchecker location macros module-manager news person portal-core portal-default-templates portal-user-portal press profile rating rolesmanager rss search seo serverSettings serverSettings-ee site-settings-publication siteSettings skins socialsharing systemsite tabularList tags tasks teasers tools topstories userDashboard visibility"
+           j:installedModules="scc"
+           j:modulePriority="0"
+           j:moduleType="templatesSet"
+           j:title="SCC"
+           jcr:mixinTypes="jmix:hasExternalProviderExtension"
+           jcr:primaryType="jnt:module">
+                <sources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                  jcr:primaryType="jnt:moduleVersionFolder"
+                  j:staticMountPointProviderKey="module-scc-1.0-SNAPSHOT">
+                    <src jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                 jcr:primaryType="jnt:folder">
+                        <main jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                     jcr:primaryType="jnt:folder">
+                            <resources jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                             jcr:primaryType="jnt:folder">
+                                <css jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                          jcr:primaryType="jnt:cssFolder"/>
+                                <jnt_template jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                                   jcr:primaryType="jnt:nodeTypeFolder">
+                                    <html jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                              jcr:primaryType="jnt:templateTypeFolder">
+                                        <template.scc.jsp jcr:primaryType="jnt:viewFile"/>
+                                    </html>
+                                </jnt_template>
+                            </resources>
+                        </main>
+                    </src>
+                </sources>
+                
+                <portlets jcr:primaryType="jnt:portletFolder"/>
+                <files jcr:primaryType="jnt:folder"/>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                <templates jcr:primaryType="jnt:templatesFolder">
+                    <files jcr:primaryType="jnt:folder">
+                        <themes jcr:primaryType="jnt:folder">
+                            <default jcr:primaryType="jnt:folder"/>
+                        </themes>
+                        <img jcr:primaryType="jnt:folder">
+                            <VAZ-2106.jpg j:height="1080"
+                                j:width="1920"
+                                j:xresolution="100 dots"
+                                j:yresolution="100 dots"
+                                jcr:mixinTypes="jmix:exif jmix:image"
+                                jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/jpeg" jcr:primaryType="jnt:resource"/>
+                            </VAZ-2106.jpg>
+                        </img>
+                    </files>
+                    <contents jcr:primaryType="jnt:contentFolder"/>
+                    <base j:theme="/modules/scc/templates/files/themes/default"
+                  j:view="scc"
+                  jcr:mixinTypes="jmix:theme"
+                  jcr:primaryType="jnt:template">
+                        <home jcr:primaryType="jnt:pageTemplate">
+                            <navbarmenu jcr:primaryType="jnt:contentList">
+                                <navigationmenu j:baselineNode="home"
+                                     j:maxDepth="2"
+                                     j:menuItemView="menuElement"
+                                     j:startLevel="0"
+                                     jcr:primaryType="jnt:navMenu">
+                                    <j:translation_en jcr:language="en"
+                                          jcr:mixinTypes="mix:title"
+                                          jcr:primaryType="jnt:translation"
+                                          jcr:title="NavigationMenu"/>
+                                </navigationmenu>
+                            </navbarmenu>
+                            <footer jcr:primaryType="jnt:contentList"/>
+                        </home>
+                        <simple jcr:primaryType="jnt:pageTemplate"/>
+                        <two-columns j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:mixinTypes="mix:title"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="two-columns"/>
+                            <pagecontent jcr:primaryType="jnt:contentList">
+                                <section--container--row--grid columnsType="predefinedColumns"
+                                                    grid="8_4"
+                                                    jcr:mixinTypes="bootstrap3mix:predefinedColumns"
+                                                    jcr:primaryType="bootstrap3nt:columns"/>
+                            </pagecontent>
+                        </two-columns>
+                    </base>
+                    <content-template j:applyOn="jnt:content"
+                              j:hiddenTemplate="true"
+                              j:priority="1"
+                              j:view="scc"
+                              jcr:primaryType="jnt:contentTemplate">
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                        </pagecontent>
+                    </content-template>
+                </templates>
+                
+                <home j:isHomePage="true"
+               j:templateName="home"
+               jcr:primaryType="jnt:page">
+                    <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Home"/>
+                </home>
+            </scc>
+    </modules>
+</content>
